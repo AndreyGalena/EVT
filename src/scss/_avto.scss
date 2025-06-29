@@ -1,0 +1,112 @@
+﻿.container__avto {
+    position: relative;
+    top: 370px;
+    left: 5px;
+    .con-1,
+    .con-2,
+    .con-3,
+    .con-4,
+    .con-5,
+    .con-6,
+    .con-7,
+    .con-8,
+    .con-9,
+    .con-10 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .name-avto-1 {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+    }
+    .avto-1 {
+        position: absolute;
+        top: 111px;
+        left: 10px;
+    }
+    .bunker-avto-1 {
+        position: absolute;
+        top: 166px;
+        left: 15px;
+    }
+    .zd-avto {
+        position: absolute;
+    }
+    .name-avto-2 {
+        position: absolute;
+        top: 244px;
+        left: 30px;
+    }
+    .avto-2 {
+        position: absolute;
+        top: 255px;
+        left: 10px;
+    }
+    .bunker-avto-2 {
+        position: absolute;
+        top: 310px;
+        left: 15px;
+    }
+    .name-avto-3 {
+        position: absolute;
+        top: 393px;
+        left: 30px;
+    }
+    .avto-3 {
+        position: absolute;
+        top: 404px;
+        left: 10px;
+    }
+    .bunker-avto-3 {
+        position: absolute;
+        top: 458px;
+        left: 15px;
+    }
+    .name-avto-4 {
+        position: absolute;
+        top: 101px;
+        left: 230px;
+    }
+    .avto-4 {
+        position: absolute;
+        top: 111px;
+        left: 210px;
+    }
+    .bunker-avto-4 {
+        position: absolute;
+        top: 166px;
+        left: 215px;
+    }
+    .name-avto-5 {
+        position: absolute;
+        top: 244px;
+        left: 230px;
+    }
+    .avto-5 {
+        position: absolute;
+        top: 256px;
+        left: 210px;
+    }
+    .bunker-avto-5 {
+        position: absolute;
+        top: 310px;
+        left: 215px;
+    }
+    .name-avto-6 {
+        position: absolute;
+        top: 393px;
+        left: 230px;
+    }
+    .avto-6 {
+        position: absolute;
+        top: 404px;
+        left: 210px;
+    }
+    .bunker-avto-6 {
+        position: absolute;
+        top: 458px;
+        left: 215px;
+    }
+}

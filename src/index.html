@@ -2,21 +2,244 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EVT project</title>
-  <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon_full/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon_full/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon_full/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon_full/site.webmanifest"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVT project</title>
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+    <!-- Запрет пользования правой кнопкой мыши -->
+    <script>
+        document.oncontextmenu = cmenu;
 
-  <main>
-    <H1>EVT-project</H1>
-  </main>
+        function cmenu() {
+            return false;
+        }
+    </script>
+    <div class="wrapper">
+        <canvas id="canvas" width="1920" height="933"></canvas>
+        <div class="container unselectable">
+            <!-- Жд-300, 200 -->
+            <div id="one-block" class="container__jd">
+                <!-- Путь-300 Конвеер-12 -->
+                <h2 class="name name-300">Путь - 300</h2>
+                <img class="vagon-300 vagon-1" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-1">
+                <img class="vagon-300 vagon-2" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-2">
+                <img class="vagon-300 vagon-3" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-3">
+                <img class="vagon-300 vagon-4" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-4">
 
+                <!-- Путь-200 Конвеер-11 -->
+                <h2 class="name name-200">Путь - 200</h2>
+                <img class="vagon-200 vagon-1" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-1">
+                <img class="vagon-200 vagon-2" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-2">
+                <img class="vagon-200 vagon-3" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-3">
+                <img class="vagon-200 vagon-4" src="img/details_img/pixil-Вагон_03_min.png" alt="Va-4">
+            </div>
+            <!-- Авто 1-6 -->
+            <div id="avto" class="container__avto">
+                <h2 class="name name-avto-1">Авто-1</h2>
+                <img class="avto-1" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-1" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
 
-  <script type="module" src="./main.js"></script>
+                <h2 class="name name-avto-2">Авто-2</h2>
+                <img class="avto-2" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-2" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
+
+                <h2 class="name name-avto-3">Авто-3</h2>
+                <img class="avto-3" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-3" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
+
+                <h2 class="name name-avto-4">Авто-4</h2>
+                <img class="avto-4" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-4" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
+
+                <h2 class="name name-avto-5">Авто-5</h2>
+                <img class="avto-5" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-5" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
+
+                <h2 class="name name-avto-6">Авто-6</h2>
+                <img class="avto-6" src="img/details_img/avto_80-min.png" alt="Avto">
+                <img class="bunker-avto-6" src="img/details_img/pixil-Bunker-avto.png" alt="Bunker">
+            </div>
+            <!-- Вход - Выход -->
+            <div id="in-out" class="container__in-out">
+                <div class="fantom fan-1"></div>
+                <div class="fantom fan-2"></div>
+                <div class="fantom fan-3"></div>
+                <div class="fantom fan-4"></div>
+                <div class="fantom fan-5"></div>
+                <div class="fantom fan-6"></div>
+            </div>
+            <!-- Выход - пирс -->
+            <div id="out-pirs" class="container__out-pirs">
+                <img id="balance" class="balance-59" src="img/details_img/pixil-IS_2.png" alt="Весы">
+                <img id="balance" class="balance-60" src="img/details_img/pixil-IS_2.png" alt="Весы">
+                <img id="neuero" class="neuero-1" src="img/details_img/NEUERO_300x161_min.png" alt="Погруз машина">
+                <img id="neuero" class="neuero-2" src="img/details_img/NEUERO_300x161_min.png" alt="Погруз машина">
+            </div>
+            <!-- Склад-1 -->
+            <div id="sclad-1" class="container__sclad-1">
+                <h2 class="name name-sk-1">Склад - 1</h2>
+                <img class="sk-1" src="img/details_img/pixil-Sk_1-2_02_min.png" alt="Sk-1">
+            </div>
+            <!-- Ёмкасти 1-24 -->
+            <div id="tank" class="container__tanks">
+                <img class="tank tank-17" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-17">
+                <div class="name-tank neme-tank-17">
+                    <h2>17</h2>
+                </div>
+
+                <img class="tank tank-9" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-9">
+                <div class="name-tank neme-tank-9">
+                    <h2>9</h2>
+                </div>
+
+                <img class="tank tank-1" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-1">
+                <div class="name-tank neme-tank-1">
+                    <h2>1</h2>
+                </div>
+
+                <img class="tank tank-18" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-18">
+                <div class="name-tank neme-tank-18">
+                    <h2>18</h2>
+                </div>
+
+                <img class="tank tank-10" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-10">
+                <div class="name-tank neme-tank-10">
+                    <h2>10</h2>
+                </div>
+
+                <img class="tank tank-2" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-2">
+                <div class="name-tank neme-tank-2">
+                    <h2>2</h2>
+                </div>
+
+                <img class="tank tank-19" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-19">
+                <div class="name-tank neme-tank-19">
+                    <h2>19</h2>
+                </div>
+
+                <img class="tank tank-11" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-11">
+                <div class="name-tank neme-tank-11">
+                    <h2>11</h2>
+                </div>
+
+                <img class="tank tank-3" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-3">
+                <div class="name-tank neme-tank-3">
+                    <h2>3</h2>
+                </div>
+
+                <img class="tank tank-20" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-20">
+                <div class="name-tank neme-tank-20">
+                    <h2>20</h2>
+                </div>
+
+                <img class="tank tank-12" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-12">
+                <div class="name-tank neme-tank-12">
+                    <h2>12</h2>
+                </div>
+
+                <img class="tank tank-4" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-4">
+                <div class="name-tank neme-tank-4">
+                    <h2>4</h2>
+                </div>
+
+                <img class="tank tank-21" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-21">
+                <div class="name-tank neme-tank-21">
+                    <h2>21</h2>
+                </div>
+
+                <img class="tank tank-13" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-13">
+                <div class="name-tank neme-tank-13">
+                    <h2>13</h2>
+                </div>
+
+                <img class="tank tank-5" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-5">
+                <div class="name-tank neme-tank-5">
+                    <h2>5</h2>
+                </div>
+
+                <img class="tank tank-22" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-22">
+                <div class="name-tank neme-tank-22">
+                    <h2>22</h2>
+                </div>
+
+                <img class="tank tank-14" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-14">
+                <div class="name-tank neme-tank-14">
+                    <h2>14</h2>
+                </div>
+
+                <img class="tank tank-6" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-6">
+                <div class="name-tank neme-tank-6">
+                    <h2>6</h2>
+                </div>
+
+                <img class="tank tank-23" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-23">
+                <div class="name-tank neme-tank-23">
+                    <h2>23</h2>
+                </div>
+
+                <img class="tank tank-15" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-15">
+                <div class="name-tank neme-tank-15">
+                    <h2>15</h2>
+                </div>
+
+                <img class="tank tank-7" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-7">
+                <div class="name-tank neme-tank-7">
+                    <h2>7</h2>
+                </div>
+
+                <img class="tank tank-24" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-24">
+                <div class="name-tank neme-tank-24">
+                    <h2>24</h2>
+                </div>
+
+                <img class="tank tank-16" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-16">
+                <div class="name-tank neme-tank-16">
+                    <h2>16</h2>
+                </div>
+
+                <img class="tank tank-8" src="img/details_img/pixil-tank_min.png" alt="Ёмкость-8">
+                <div class="name-tank neme-tank-8">
+                    <h2>8</h2>
+                </div>
+            </div>
+            <!-- Склад-2 -->
+            <div id="sclad-2" class="container__sclad-2">
+                <h2 class="name name-sk-2">Склад - 2</h2>
+                <img class="sk-2" src="img/details_img/pixil-Sk_1-2_02_min.png" alt="Sk-1">
+            </div>
+            <!-- Рабочая консоль -->
+            <div id="consol" class="container__consol">
+                <h2 class="name-consol">Рабочая консоль.</h2>
+                <div class="control">
+                    <div id="name-element" class="element-name"></div>
+                    <ul>
+                        <li>Тросовый-1 </li>
+                        <li>Тросовый-2 </li>
+                        <li>Кнопка пуск </li>
+                        <li>Кнопка стоп </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="js/_con_class.js"></script>
+    <script src="js/zd_class.js"></script>
+    <script src="js/_pk_class.js"></script>
+    <script src="js/file.js"></script>
+    <script src="js/_canvas.js"></script>
+
+    <!-- <script type="module" src="./main.js"></script> -->
 </body>
 
 </html>

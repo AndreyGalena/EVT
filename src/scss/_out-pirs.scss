@@ -1,0 +1,37 @@
+﻿.container__out-pirs {
+    position: relative;
+    top: 0px;
+    left: 576px;
+    .con-59,
+    .con-60,
+    .con-61,
+    .con-62,
+    .con-63,
+    .con-64 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .balance-59 {
+        position: absolute;
+        top: 60px;
+        left: 626px;
+    }
+    .balance-60 {
+        position: absolute;
+        top: 28px;
+        left: 686px;
+    }
+    .neuero-1 {
+        position: absolute;
+        top: 707px;
+        left: 691px;
+        z-index: 2;
+    }
+    .neuero-2 {
+        position: absolute;
+        top: 316px;
+        left: 691px;
+        z-index: 2;
+    }
+}

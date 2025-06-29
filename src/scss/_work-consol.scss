@@ -1,0 +1,141 @@
+﻿.container {
+    &__consol {
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 1616px;
+        width: 300px;
+        min-height: 1076px;
+        border: 2px solid red;
+        background-color: rgb(161, 172, 161);
+    }
+}
+
+.name-consol {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 24px;
+    color: rgb(110, 93, 93);
+    padding: 61px;
+    background-color: burlywood;
+}
+
+.control {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 276px;
+    font-size: 18px;
+}
+
+.control li {
+    padding: 15px;
+}
+
+.button-on {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: green;
+    padding: 15px 20px;
+    cursor: pointer;
+    h3 {
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.button-on:hover {
+    box-shadow: 5px 5px 5px rgb(88, 85, 85);
+    h3 {
+        font-size: 26px;
+        color: darkred;
+    }
+}
+
+.button-off {
+    position: absolute;
+    bottom: 30px;
+    left: 170px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #b31a09;
+    padding: 15px 20px;
+    cursor: pointer;
+    h3 {
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.button-off:hover {
+    box-shadow: 5px 5px 5px rgb(88, 85, 85);
+    h3 {
+        font-size: 26px;
+        color: rgb(82, 136, 90);
+    }
+}
+
+// Кнопки Открыть & Закрыть
+.button-open,
+.button-left {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.button-open:hover,
+.button-left:hover {
+    -webkit-box-shadow: 5px 5px 5px #585555;
+    box-shadow: 5px 5px 5px #585555;
+}
+
+.button-open:hover h3,
+.button-left:hover h3 {
+    font-size: 17px;
+    color: rgb(213, 208, 208);
+}
+
+.button-closed,
+.button-riget {
+    position: absolute;
+    bottom: 30px;
+    left: 170px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.button-closed:hover,
+.button-riget:hover {
+    -webkit-box-shadow: 5px 5px 5px #585555;
+    box-shadow: 5px 5px 5px #585555;
+}
+
+.button-closed:hover h3,
+.button-riget:hover h3 {
+    font-size: 17px;
+    color: rgb(213, 208, 208);
+}
+
+.element-name {
+    position: absolute;
+    top: -32px;
+    left: 100px;
+    background-color: chartreuse;
+    border-radius: 20px;
+    h2 {
+        color: #b31a09;
+        padding: 5px;
+    }
+}

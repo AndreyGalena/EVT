@@ -1,0 +1,45 @@
+﻿.container__jd {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    .name-300 {
+        top: 10px;
+        left: 125px;
+    }
+    .name-200 {
+        top: 160px;
+        left: 125px;
+    }
+    .vagon-300 {
+        position: absolute;
+        top: 30px;
+        width: 80px;
+        z-index: 1;
+    }
+    .vagon-200 {
+        position: absolute;
+        top: 180px;
+        width: 80px;
+        z-index: 1;
+    }
+    .vagon-1 {
+        left: 20px;
+    }
+    .vagon-2 {
+        left: 90px;
+    }
+    .vagon-3 {
+        left: 160px;
+    }
+    .vagon-4 {
+        left: 230px;
+    }
+    .con-11,
+    .con-12,
+    .con-13,
+    .con-14 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+    }
+}

@@ -1,0 +1,247 @@
+﻿.container__tanks {
+    position: relative;
+    top: 350px;
+    left: 699px;
+    .tank {
+        position: absolute;
+        width: 50px;
+    }
+    .tank-1,
+    .tank-2,
+    .tank-3,
+    .tank-4,
+    .tank-5,
+    .tank-6,
+    .tank-7,
+    .tank-8 {
+        top: 370px;
+    }
+    .tank-9,
+    .tank-10,
+    .tank-11,
+    .tank-12,
+    .tank-13,
+    .tank-14,
+    .tank-15,
+    .tank-16 {
+        top: 195px;
+    }
+    .tank-17,
+    .tank-18,
+    .tank-19,
+    .tank-20,
+    .tank-21,
+    .tank-22,
+    .tank-23,
+    .tank-24 {
+        top: 16px;
+    }
+    .tank-1 {
+        left: 10px;
+    }
+    .tank-9 {
+        left: 10px;
+    }
+    .tank-17 {
+        left: 10px;
+    }
+    .tank-2 {
+        left: 80px;
+    }
+    .tank-10 {
+        left: 80px;
+    }
+    .tank-18 {
+        left: 80px;
+    }
+    .tank-3 {
+        left: 150px;
+    }
+    .tank-11 {
+        left: 150px;
+    }
+    .tank-19 {
+        left: 150px;
+    }
+    .tank-4 {
+        left: 220px;
+    }
+    .tank-12 {
+        left: 220px;
+    }
+    .tank-20 {
+        left: 220px;
+    }
+    .tank-5 {
+        left: 300px;
+    }
+    .tank-13 {
+        left: 300px;
+    }
+    .tank-21 {
+        left: 300px;
+    }
+    .tank-6 {
+        left: 370px;
+    }
+    .tank-14 {
+        left: 370px;
+    }
+    .tank-22 {
+        left: 370px;
+    }
+    .tank-7 {
+        left: 440px;
+    }
+    .tank-15 {
+        left: 440px;
+    }
+    .tank-23 {
+        left: 440px;
+    }
+    .tank-8 {
+        left: 510px;
+    }
+    .tank-16 {
+        left: 510px;
+    }
+    .tank-24 {
+        left: 510px;
+    }
+    .name-tank {
+        position: absolute;
+        width: 22px;
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 18px;
+        border: 1px solid;
+        border-radius: 20px;
+        padding: 2px;
+        background-color: chartreuse;
+        z-index: 2;
+        h2 {
+            color: red;
+        }
+    }
+    .neme-tank-1,
+    .neme-tank-2,
+    .neme-tank-3,
+    .neme-tank-4,
+    .neme-tank-5,
+    .neme-tank-6,
+    .neme-tank-7,
+    .neme-tank-8 {
+        top: 402px;
+    }
+    .neme-tank-9,
+    .neme-tank-10,
+    .neme-tank-11,
+    .neme-tank-12,
+    .neme-tank-13,
+    .neme-tank-14,
+    .neme-tank-15,
+    .neme-tank-16 {
+        top: 226px;
+    }
+    .neme-tank-17,
+    .neme-tank-18,
+    .neme-tank-19,
+    .neme-tank-20,
+    .neme-tank-21,
+    .neme-tank-22,
+    .neme-tank-23,
+    .neme-tank-24 {
+        top: 47px;
+    }
+    .neme-tank-1 {
+        left: 24px;
+    }
+    .neme-tank-2 {
+        left: 95px;
+    }
+    .neme-tank-3 {
+        left: 164px;
+    }
+    .neme-tank-4 {
+        left: 235px;
+    }
+    .neme-tank-5 {
+        left: 315px;
+    }
+    .neme-tank-6 {
+        left: 385px;
+    }
+    .neme-tank-7 {
+        left: 455px;
+    }
+    .neme-tank-8 {
+        left: 525px;
+    }
+    .neme-tank-9 {
+        left: 24px;
+    }
+    .neme-tank-10 {
+        left: 94px;
+    }
+    .neme-tank-11 {
+        left: 163px;
+    }
+    .neme-tank-12 {
+        left: 235px;
+    }
+    .neme-tank-13 {
+        left: 314px;
+    }
+    .neme-tank-14 {
+        left: 384px;
+    }
+    .neme-tank-15 {
+        left: 454px;
+    }
+    .neme-tank-16 {
+        left: 524px;
+    }
+    .neme-tank-17 {
+        left: 24px;
+    }
+    .neme-tank-18 {
+        left: 94px;
+    }
+    .neme-tank-19 {
+        left: 163px;
+    }
+    .neme-tank-20 {
+        left: 234px;
+    }
+    .neme-tank-21 {
+        left: 314px;
+    }
+    .neme-tank-22 {
+        left: 384px;
+    }
+    .neme-tank-23 {
+        left: 454px;
+    }
+    .neme-tank-24 {
+        left: 524px;
+    }
+    .con-27,
+    .con-28,
+    .con-29,
+    .con-30,
+    .con-31,
+    .con-32,
+    .con-33,
+    .con-34,
+    .con-35,
+    .con-36,
+    .con-37,
+    .con-51,
+    .con-52,
+    .con-53 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+    }
+}

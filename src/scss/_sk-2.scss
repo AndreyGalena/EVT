@@ -1,0 +1,22 @@
+﻿.container__sclad-2 {
+    position: relative;
+    top: 65px;
+    left: 700px;
+    .name-sk-2 {
+        top: 64px;
+        left: 210px;
+        z-index: 2;
+    }
+    .sk-2 {
+        position: absolute;
+        top: 15px;
+        left: 10px;
+    }
+    .con-54,
+    .con-55,
+    .con-56 {
+        position: absolute;
+        cursor: pointer;
+        z-index: 5;
+    }
+}

@@ -1,0 +1,150 @@
+﻿@import '../scss/_nullstyle';
+@import '../scss/_jd';
+@import '../scss/_sk-1';
+@import '../scss/_sk-2';
+@import '../scss/_work-consol';
+@import '../scss/_avto';
+@import '../scss/_tank';
+@import '../scss/_out-pirs';
+@import '../scss/_in-out';
+body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(233, 238, 220);
+}
+
+// Кроссбраузерный Запрет на выделения текста на страничке
+.unselectable {
+    -webkit-touch-callout: none; // iOS Safari
+    -webkit-user-select: none; // Chrome/Safari/Opera
+    -khtml-user-select: none; // Konqueror
+    -moz-user-select: none; // Firefox
+    -ms-user-select: none; // Internet Explorer/Edge
+    user-select: none; // Non-prefixed version, currently not supported by any browser
+}
+
+#li {
+    position: absolute;
+    z-index: 4;
+}
+
+#li-F {
+    position: absolute;
+    z-index: 1;
+}
+
+#canvas {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+#name1,
+#name2,
+#name3,
+#name4,
+#name5,
+#name6,
+#name7,
+#name8,
+#name9,
+#name10,
+#name11,
+#name12,
+#name13,
+#name14,
+#name15,
+#name16,
+#name17,
+#name18,
+#name19,
+#name20,
+#name21,
+#name22,
+#name23,
+#name24,
+#name25,
+#name26,
+#name27,
+#name28,
+#name29,
+#name30,
+#name31,
+#name32,
+#name33,
+#name34,
+#name35,
+#name36,
+#name37,
+#name51,
+#name52,
+#name53,
+#name54,
+#name55,
+#name56,
+#name57,
+#name58,
+#name59,
+#name60,
+#name61,
+#name62,
+#name63,
+#name64 {
+    position: absolute;
+    color: brown;
+    font-size: 15px;
+    font-weight: 600;
+    z-index: 6;
+}
+
+#name13,
+#name14,
+#name15,
+#name16,
+#name17,
+#name18,
+#name19,
+#name20,
+#name21,
+#name22,
+#name23,
+#name24,
+#name57,
+#name58,
+#name63,
+#name64 {
+    color: #ff1a15;
+}
+
+.name {
+    position: absolute;
+    font-size: 15px;
+    color: red;
+}
+
+.zd-sk {
+    position: absolute;
+    width: 20px;
+}
+
+.zd {
+    position: absolute;
+    cursor: pointer;
+    z-index: 6;
+}
+
+// Перекидные клапана
+.pk {
+    position: absolute;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.tex-block {
+    position: relative;
+    bottom: 500px;
+    left: 1700px;
+}
