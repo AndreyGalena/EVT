@@ -1,4 +1,5 @@
-﻿var canvas = document.getElementById("canvas");
+﻿// Рисует линии на холсте.
+var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 function arrowXA(x, y) {
@@ -30,10 +31,10 @@ function arrowYB(x, y) {
 }
 // Лк-8
 // Пк-1 Пк-6
-ctx.beginPath();
-ctx.strokeStyle = "green";
-ctx.moveTo(340, 401);
-ctx.lineTo(445, 401);
+ctx.beginPath();// начало рисование нового обьекта
+ctx.strokeStyle = "green"; // цвет линии.
+ctx.moveTo(340, 401); // начало линии
+ctx.lineTo(445, 401); // конец линии
 ctx.moveTo(460, 401);
 ctx.lineTo(476, 401);
 ctx.lineTo(476, 416);

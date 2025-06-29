@@ -1,4 +1,6 @@
-﻿class Con {
+﻿// import { deleteButton, deleteButtonPk } from './_function';
+
+export class Con {
     constructor(topCo, leftCo, className, nameLk, nameID, url,
         topName, leftName, block, liStart, liFinish) {
         this.topCo = topCo + "px";
@@ -42,8 +44,8 @@
     }
 
     clickHandler(event) { // действие после нажатия на Лк
-        deleteButton();
-        deleteButtonPk();
+        // deleteButton();
+        // deleteButtonPk();
         this.addButtonOn();
         this.addButtonOff();
         event.stopPropagation();
@@ -147,7 +149,7 @@
 }
 
 //--------------Li------------------------------------------------------
-class Li {
+export class Li {
     // (top, left, block, direction, urlLi, idLi)
     constructor(top, left, block, direction, urlLi, idLi) {
         this.topLi = top;

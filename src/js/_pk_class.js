@@ -1,4 +1,6 @@
-﻿class Pk {
+﻿// import { deleteButtonPk } from './_function';
+
+export class Pk {
     constructor(top, left, className, namePk,
         idBlock, imgList, wayLeft, wayRiget) {
         this.topPk = top;
@@ -40,7 +42,7 @@
     }
 
     clickHandler(event) { // действие после нажатия на Пк
-        deleteButtonPk();
+        // deleteButtonPk();
         this.drawLeftAndRiget(event);
         event.stopPropagation();
         this.img.style.boxShadow = '0px 0px 10px Green';
