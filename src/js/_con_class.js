@@ -1,8 +1,6 @@
-﻿// import { deleteButton, deleteButtonPk } from './_function';
-
-export class Con {
+﻿export class Con {
     constructor(topCo, leftCo, className, nameLk, nameID, url,
-        topName, leftName, block, liStart, liFinish) {
+        topName, leftName, block, liStart, liFinish, utils) {
         this.topCo = topCo + "px";
         this.leftCo = leftCo + "px";
         this.className = className;
@@ -13,6 +11,7 @@ export class Con {
         this.flageBu = true;
         this.liStart = liStart;
         this.liFinish = liFinish;
+        this.utils = utils;
 
         this.name = {
             nameLk: nameLk,
@@ -44,6 +43,10 @@ export class Con {
     }
 
     clickHandler(event) { // действие после нажатия на Лк
+
+        console.log("con_class-clickHandler");
+        this.utils.deleteButton();
+        this.utils.deleteButtonPk();
         // deleteButton();
         // deleteButtonPk();
         this.addButtonOn();

@@ -1,4 +1,5 @@
-﻿// import { deleteButton, deleteButtonPk } from './_function';
+﻿import { deleteButton, deleteButtonPk } from './_function';
+
 
 export class Zd {
     constructor(top, left, nameZd, idBlock, className = "zd") {
@@ -43,8 +44,8 @@ export class Zd {
     }
 
     clickHandler(event) { // действие после нажатия на Зд
-        // deleteButton();
-        // deleteButtonPk();
+        deleteButton();
+        deleteButtonPk();
         this.drawOpenAndClosed(event);
         event.stopPropagation();
         this.img.style.boxShadow = '0px 0px 10px Green';

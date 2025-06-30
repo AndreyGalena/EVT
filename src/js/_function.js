@@ -1,7 +1,14 @@
-import { objects, zdObjects, pkObjects } from '../main';
+import { objects } from './_creation_con';
+import { pkObjects } from './_creation_pk';
+import { zdObjects } from './_creation_zd';
+
 
 // Общая функция StopCon.
 export function offLine() {
+    // Если список ещё не создан.
+    if (!objects) {
+        return;
+    }
     for (let i = 0; i < objects.length; i++) {
         objects[i].img.style.boxShadow = 'none';
         objects[i].flageBu = true;
@@ -16,6 +23,10 @@ export function offLine() {
 // Функция перехода от задвижки к задвижки
 export function deleteButton() {
     offLine();
+    // Если список ещё не создан.
+    if (!zdObjects) {
+        return;
+    }
     for (let i = 0; i < zdObjects.length; i++) {
         zdObjects[i].img.style.boxShadow = 'none';
         // Удаление элементов кнопки
@@ -34,6 +45,10 @@ export function deleteButton() {
 export function deleteButtonPk() {
     offLine();
     deleteButton()
+    // Если список ещё не создан.
+    if (!pkObjects) {
+        return;
+    }
     for (let i = 0; i < pkObjects.length; i++) {
         pkObjects[i].img.style.boxShadow = 'none';
         // Удаление элементов кнопки
