@@ -1,5 +1,5 @@
 ﻿import { Li } from './js/_con_class';
-import { offLine, deleteButton, deleteButtonPk } from './js/_function';
+import { offLine, deleteButton, deleteButtonPk } from "./js/_function";
 import { objects } from './js/_creation_con';
 
 

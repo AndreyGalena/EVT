@@ -1,8 +1,8 @@
-﻿import { deleteButton, deleteButtonPk } from './_function';
+﻿import * as utils from './_function'; // объект функций как аргумент.
 
 
 export class Zd {
-    constructor(top, left, nameZd, idBlock, className = "zd") {
+    constructor(top, left, nameZd, idBlock, className = "zd", my_utils = utils) {
         this.topZd = top;
         this.leftZd = left;
         this.className = className;
@@ -11,6 +11,7 @@ export class Zd {
         this.idBlock = idBlock;
         this.flagOpen = true;
         this.flagClosed = false;
+        this.utils = my_utils;
         this.list = [
             "img/details_img/pixil-Zd_off_20x20.png",
             "img/details_img/pixil-Zd_or_20x20.png",
@@ -44,8 +45,8 @@ export class Zd {
     }
 
     clickHandler(event) { // действие после нажатия на Зд
-        deleteButton();
-        deleteButtonPk();
+        this.utils.deleteButton();
+        this.utils.deleteButtonPk();
         this.drawOpenAndClosed(event);
         event.stopPropagation();
         this.img.style.boxShadow = '0px 0px 10px Green';

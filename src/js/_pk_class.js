@@ -1,9 +1,8 @@
-﻿import { deleteButtonPk } from './_function';
-
+﻿import { deleteButtonPk } from "./_function"; // объект функций как аргумент.
 
 export class Pk {
     constructor(top, left, className, namePk,
-        idBlock, imgList, wayLeft, wayRiget) {
+        idBlock, imgList, wayLeft, wayRiget, func = deleteButtonPk) {
         this.topPk = top;
         this.leftPk = left;
         this.className = className;
@@ -15,6 +14,7 @@ export class Pk {
         this.wayRiget = wayRiget;
         this.flagLeft = false;
         this.flagRight = true;
+        this.deleteButtonPk = func;
 
         this.drawPk();
         this.setup();
@@ -43,7 +43,7 @@ export class Pk {
     }
 
     clickHandler(event) { // действие после нажатия на Пк
-        deleteButtonPk();
+        this.deleteButtonPk();
         this.drawLeftAndRiget(event);
         event.stopPropagation();
         this.img.style.boxShadow = '0px 0px 10px Green';
